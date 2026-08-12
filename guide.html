@@ -27,6 +27,35 @@
     </header>
 
     <h2>Hvad skal du kigge efter?</h2>
+<div class="quiz">
+
+    <h2>🎯 Find det rigtige gaming-udstyr</h2>
+
+    <p>Hvilket budget har du?</p>
+
+    <select id="budget">
+        <option value="budget">Under 500 kr.</option>
+        <option value="mellem">500–1.000 kr.</option>
+        <option value="premium">Over 1.000 kr.</option>
+    </select>
+
+    <p>Hvad spiller du mest?</p>
+
+    <select id="spil">
+        <option value="fps">FPS-spil</option>
+        <option value="fortnite">Fortnite</option>
+        <option value="andet">Andre spil</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="findUdstyr()" class="knap">
+        Find mit udstyr 🎮
+    </button>
+
+    <div id="resultat"></div>
+
+</div>
 
     <div class="produkt">
 
@@ -87,6 +116,41 @@
     <br>
 
     <a href="index.html" class="knap">← Tilbage til forsiden</a>
+<script>
+function findUdstyr() {
+
+    const budget = document.getElementById("budget").value;
+    const spil = document.getElementById("spil").value;
+
+    let resultat = "";
+
+    if (budget === "budget" && spil === "fps") {
+        resultat = `
+    🖱️ <strong>Logitech G305</strong><br><br>
+    Et godt valg til FPS-spil, hvis du vil holde budgettet nede.
+    <br><br>
+    <a href="mus1.html" class="knap">Læs vores anmeldelse</a>
+`;
+    } 
+    else if (budget === "mellem" && spil === "fps") {
+        resultat = "🖱️ Kig efter en god gaming-mus med præcis sensor og lav vægt.";
+    } 
+    else if (budget === "premium" && spil === "fps") {
+        resultat = "🔥 Du kan kigge efter avanceret gaming-udstyr med høj ydeevne.";
+    } 
+    else if (budget === "budget") {
+        resultat = "🎮 Kig efter prisvenligt gaming-udstyr med gode anmeldelser.";
+    } 
+    else if (budget === "mellem") {
+        resultat = "⭐ Du har et fint budget til solidt gaming-udstyr.";
+    } 
+    else {
+        resultat = "🏆 Med dette budget kan du kigge efter premium gaming-udstyr.";
+    }
+
+    document.getElementById("resultat").innerHTML = resultat;
+}
+</script>
 
 </body>
 

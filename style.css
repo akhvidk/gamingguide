@@ -173,3 +173,137 @@ nav a:hover {
         padding: 7px 9px;
     }
 }
+
+.koeb {
+    background-color: #172554;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #3b82f6;
+}
+
+.koeb h2 {
+    margin-top: 0;
+    color: #60a5fa;
+}
+
+.koeb p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.fordele-ulemper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.fordele-ulemper > div {
+    background-color: #1e293b;
+    width: 240px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.fordele-ulemper h3 {
+    margin-top: 0;
+}
+
+.fordele-ulemper p {
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.samlet-vurdering {
+    background: linear-gradient(135deg, #581c87, #2563eb);
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.samlet-vurdering h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.stjerner {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.samlet-vurdering p {
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+.prisniveau {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #cbd5e1;
+    padding: 10px 18px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.quiz {
+    background-color: #111827;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.quiz select {
+    background-color: #1e293b;
+    color: white;
+    border: 1px solid #475569;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.quiz button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resultat {
+    background-color: #1e293b;
+    color: #c4b5fd;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.populaere {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.populaere h2 {
+    text-align: center;
+}
+
+.populaere-produkter {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.populaere-produkter .produkt {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    margin: 15px 0;
+}
