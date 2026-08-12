@@ -33,3 +33,143 @@ body > p {
     border-radius: 10px;
     font-size: 18px;
 }
+.produkt {
+    background-color: #1e293b;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.produkt h3 {
+    color: #a855f7;
+    font-size: 25px;
+}
+
+.knap {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.knap:hover {
+    background-color: #7c3aed;
+}
+.kategorier {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+}
+
+.kategori {
+    background-color: #1e293b;
+    color: white;
+    text-decoration: none;
+    width: 200px;
+    padding: 25px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 35px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.kategori strong {
+    font-size: 20px;
+}
+
+.kategori span {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.kategori:hover {
+    background-color: #334155;
+    transform: translateY(-5px);
+}
+
+.om-os {
+    background-color: #111827;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.om-os h2 {
+    margin-top: 0;
+    color: #a855f7;
+}
+
+.om-os > p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.fordele {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fordele > div {
+    background-color: #1e293b;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.fordele h3 {
+    color: #a855f7;
+}
+
+.fordele p {
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+nav {
+    background-color: #020617;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #8b5cf6;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 7px 9px;
+    }
+}
