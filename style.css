@@ -49,12 +49,33 @@ body > p {
 
 .knap {
     display: inline-block;
-    background-color: #8b5cf6;
+    background: linear-gradient(135deg, #8b5cf6, #2563eb);
     color: white;
     text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 8px;
+    padding: 14px 28px;
+    border-radius: 10px;
     margin-top: 15px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border: 2px solid #a855f7;
+
+    box-shadow:
+        0 0 10px rgba(139, 92, 246, 0.5),
+        0 0 25px rgba(37, 99, 235, 0.3);
+
+    transition: all 0.25s ease;
+}
+
+.knap:hover {
+    background: linear-gradient(135deg, #a855f7, #3b82f6);
+
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow:
+        0 0 15px rgba(168, 85, 247, 0.8),
+        0 0 35px rgba(59, 130, 246, 0.6);
 }
 
 .knap:hover {
