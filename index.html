@@ -26,6 +26,24 @@
         <p>Find det bedste gaming-udstyr.</p>
     </header>
 
+<section class="soegning">
+
+    <h2>🔎 Find gaming-udstyr</h2>
+
+    <p>Søg efter fx mus, tastatur, headset eller skærm.</p>
+
+    <input
+        type="text"
+        id="soegFelt"
+        placeholder="Skriv fx FPS, tastatur eller headset..."
+    >
+
+    <button onclick="soeg()">Søg</button>
+
+    <div id="soegResultat"></div>
+
+</section>
+
     <h2>Find det bedste gaming-udstyr</h2>
 
     <p>
@@ -63,6 +81,38 @@
     </div>
 
     <section class="om-os">
+
+<section class="bedste-valg">
+
+    <h2>🏆 GamingGuides bedste valg</h2>
+
+    <div class="bedste-valg-kort">
+
+        <div>
+            <h3>🎯 Bedst til FPS</h3>
+            <p>🖱️ Logitech G309 LIGHTSPEED</p>
+            <p>En hurtig trådløs gaming-mus, der passer godt til FPS-spil.</p>
+            <a href="mus1.html" class="knap">Se anbefaling</a>
+        </div>
+
+        <div>
+            <h3>💰 Bedste budget</h3>
+            <p>⌨️ Logitech G213 Prodigy</p>
+            <p>Et prisvenligt tastatur til både gaming og hverdagsbrug.</p>
+            <a href="tastatur2.html" class="knap">Se anbefaling</a>
+        </div>
+
+        <div>
+            <h3>💻 Bedst til gaming + hverdag</h3>
+            <p>🖥️ LG UltraGear 27GR75Q-B</p>
+            <p>27" QHD med 165 Hz – god til både gaming, skole og arbejde.</p>
+            <a href="skaerm2.html" class="knap">Se anbefaling</a>
+        </div>
+
+    </div>
+
+</section>
+
        <section class="populaere">
 
     <h2>⭐ Populære lige nu</h2>
@@ -167,6 +217,52 @@
 <p class="opdateret">
     🕒 Senest opdateret: August 2026
 </p>
+
+<script>
+
+function soeg() {
+
+    let tekst = document
+        .getElementById("soegFelt")
+        .value
+        .toLowerCase();
+
+    let resultat = document.getElementById("soegResultat");
+
+    if (tekst.includes("mus") || tekst.includes("fps")) {
+
+        resultat.innerHTML =
+            '<p>🖱️ <strong>Logitech G309</strong> – God til FPS-spil</p>' +
+            '<a href="mus1.html" class="knap">Se mus</a>';
+
+    } else if (tekst.includes("tastatur")) {
+
+        resultat.innerHTML =
+            '<p>⌨️ <strong>Logitech G213</strong> – God til gaming og hverdagsbrug</p>' +
+            '<a href="tastatur2.html" class="knap">Se tastatur</a>';
+
+    } else if (tekst.includes("headset")) {
+
+        resultat.innerHTML =
+            '<p>🎧 <strong>HyperX Cloud Stinger 2</strong> – Godt gaming-headset</p>' +
+            '<a href="headset1.html" class="knap">Se headset</a>';
+
+    } else if (tekst.includes("skærm") || tekst.includes("skaerm")) {
+
+        resultat.innerHTML =
+            '<p>🖥️ <strong>LG UltraGear 27GR75Q-B</strong> – God til gaming og hverdagsbrug</p>' +
+            '<a href="skaerm2.html" class="knap">Se skærm</a>';
+
+    } else {
+
+        resultat.innerHTML =
+            '<p>😕 Vi kunne ikke finde noget. Prøv fx "mus", "FPS", "tastatur", "headset" eller "skærm".</p>';
+
+    }
+
+}
+
+</script>
 
 </body>
 
