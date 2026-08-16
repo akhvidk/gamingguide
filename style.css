@@ -459,3 +459,36 @@ nav a:hover {
         0 0 15px rgba(34, 197, 94, 0.8),
         0 0 35px rgba(34, 197, 94, 0.5);
 }
+
+.koeb-knap {
+    display: inline-block;
+    width: auto;
+    padding: 14px 28px;
+    margin: 15px 0 10px;
+
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+    border: 2px solid #4ade80;
+
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+    box-shadow:
+        0 0 10px rgba(34, 197, 94, 0.5),
+        0 0 25px rgba(34, 197, 94, 0.3);
+
+    transition: all 0.25s ease;
+}
+
+.koeb-knap:hover {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(34, 197, 94, 0.8),
+        0 0 35px rgba(34, 130, 94, 0.6);
+}
