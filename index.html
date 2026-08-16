@@ -28,17 +28,26 @@
 
 <section class="soegning">
 
+    <section class="soegning">
+
     <h2>🔎 Find gaming-udstyr</h2>
 
-    <p>Søg efter fx mus, tastatur, headset eller skærm.</p>
+    <p>
+        Søg efter et produkt, en kategori eller hvad du skal bruge udstyret til.
+    </p>
 
-    <input
-        type="text"
-        id="soegFelt"
-        placeholder="Skriv fx FPS, tastatur eller headset..."
-    >
+    <div class="soegefelt">
 
-    <button onclick="soeg()">Søg</button>
+        <input
+            type="text"
+            id="soegFelt"
+            placeholder="Fx FPS-mus, mekanisk tastatur eller 180 Hz skærm..."
+            onkeydown="if(event.key === 'Enter') soeg()"
+        >
+
+        <button onclick="soeg()">🔎 Søg</button>
+
+    </div>
 
     <div id="soegResultat"></div>
 
