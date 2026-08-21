@@ -492,3 +492,145 @@ nav a:hover {
         0 0 15px rgba(34, 197, 94, 0.8),
         0 0 35px rgba(34, 130, 94, 0.6);
 }
+
+.affiliate-info {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 12px;
+}
+
+.affiliate-info h2 {
+    margin-bottom: 10px;
+}
+
+.affiliate-info p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 60px;
+    padding: 40px 20px 20px;
+    background: #111827;
+    color: white;
+}
+
+.footer-indhold {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-indhold h3 {
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.footer-indhold p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.footer-indhold a {
+    display: block;
+    width: fit-content;
+
+    margin-bottom: 8px;
+
+    color: #d1d5db;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.footer-indhold a:hover {
+    color: #00bfff;
+    transform: translateX(4px);
+}
+
+.footer-bund {
+    max-width: 1100px;
+    margin: 30px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #374151;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+/* =========================
+   KNAPPER
+========================= */
+
+.knap,
+.koeb-knap {
+    transition: 0.2s;
+}
+
+.knap:hover,
+.koeb-knap:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   KATEGORIER
+========================= */
+
+.kategori {
+    transition: 0.2s;
+}
+
+.kategori:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   PRODUKTER
+========================= */
+
+.produkt {
+    transition: 0.2s;
+}
+
+.produkt:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 700px) {
+
+    .footer-indhold {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-bund {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}

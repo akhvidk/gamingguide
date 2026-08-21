@@ -5,30 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GamingGuide</title>
+    <title>GamingGuide | Gaming-udstyr og guides</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- MENU -->
+
 <nav>
     <a href="index.html">Forside</a>
+    <a href="gaming-pc.html">Gaming-PC</a>
     <a href="mus.html">Gaming-mus</a>
-    <a href="#">Tastaturer</a>
-    <a href="#">Headsets</a>
-    <a href="#">Skærme</a>
+    <a href="tastatur.html">Tastaturer</a>
+    <a href="headsets.html">Headsets</a>
+    <a href="skaerme.html">Skærme</a>
     <a href="guide.html">Købsguide</a>
 </nav>
 
-    <header>
-        <h1>GamingGuide 🎮</h1>
-        <p>Find det bedste gaming-udstyr.</p>
-    </header>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>GamingGuide 🎮</h1>
+
+    <p>
+        Find det bedste gaming-udstyr til dit budget og din spillestil.
+    </p>
+
+</header>
+
+
+<!-- SØGNING -->
 
 <section class="soegning">
-
-    <section class="soegning">
 
     <h2>🔎 Find gaming-udstyr</h2>
 
@@ -41,7 +53,7 @@
         <input
             type="text"
             id="soegFelt"
-            placeholder="Fx FPS-mus, mekanisk tastatur eller 180 Hz skærm..."
+            placeholder="Fx FPS-mus, mekanisk tastatur, headset eller 180 Hz skærm..."
             onkeydown="if(event.key === 'Enter') soeg()"
         >
 
@@ -53,6 +65,11 @@
 
 </section>
 
+
+<!-- INTRO -->
+
+<section>
+
     <h2>Find det bedste gaming-udstyr</h2>
 
     <p>
@@ -60,36 +77,81 @@
         der passer til dit budget og din spillestil.
     </p>
 
+
+    <!-- KATEGORIER -->
+
     <div class="kategorier">
 
-        <a href="mus.html" class="kategori">
-            🖱️
-            <strong>Gaming-mus</strong>
-           <span>Se vores anbefalinger</span>
+        <a href="gaming-pc.html" class="kategori">
+
+            🖥️
+
+            <strong>Gaming-PC</strong>
+
+            <span>
+                Se vores anbefalinger
+            </span>
+
         </a>
 
-     <a href="tastatur.html" class="kategori">
-    ⌨️
-    <strong>Gaming-tastaturer</strong>
-    <span>Se vores anbefalinger</span>
-</a>
 
-</a>
+        <a href="mus.html" class="kategori">
+
+            🖱️
+
+            <strong>Gaming-mus</strong>
+
+            <span>
+                Se vores anbefalinger
+            </span>
+
+        </a>
+
+
+        <a href="tastatur.html" class="kategori">
+
+            ⌨️
+
+            <strong>Gaming-tastaturer</strong>
+
+            <span>
+                Se vores anbefalinger
+            </span>
+
+        </a>
+
+
         <a href="headsets.html" class="kategori">
-    🎧
-    <strong>Gaming-headsets</strong>
-    <span>Se vores anbefalinger</span>
-</a>
+
+            🎧
+
+            <strong>Gaming-headsets</strong>
+
+            <span>
+                Se vores anbefalinger
+            </span>
+
+        </a>
+
 
         <a href="skaerme.html" class="kategori">
-    🖥️
-    <strong>Gaming-skærme</strong>
-    <span>Se vores anbefalinger</span>
-</a>
+
+            🖥️
+
+            <strong>Gaming-skærme</strong>
+
+            <span>
+                Se vores anbefalinger
+            </span>
+
+        </a>
 
     </div>
 
-    <section class="om-os">
+</section>
+
+
+<!-- BEDSTE VALG -->
 
 <section class="bedste-valg">
 
@@ -97,170 +159,320 @@
 
     <div class="bedste-valg-kort">
 
+
+        <!-- FPS -->
+
         <div>
+
             <h3>🎯 Bedst til FPS</h3>
-            <p>🖱️ Logitech G309 LIGHTSPEED</p>
-            <p>En hurtig trådløs gaming-mus, der passer godt til FPS-spil.</p>
-            <a href="mus1.html" class="knap">Se anbefaling</a>
+
+            <p>
+                🖱️ Logitech G309 LIGHTSPEED
+            </p>
+
+            <p>
+                En hurtig trådløs gaming-mus,
+                der passer godt til FPS-spil.
+            </p>
+
+            <a href="mus1.html" class="knap">
+                📖 Se anbefaling
+            </a>
+
         </div>
 
+
+        <!-- BUDGET -->
+
         <div>
+
             <h3>💰 Bedste budget</h3>
-            <p>⌨️ Logitech G213 Prodigy</p>
-            <p>Et prisvenligt tastatur til både gaming og hverdagsbrug.</p>
-            <a href="tastatur2.html" class="knap">Se anbefaling</a>
+
+            <p>
+                ⌨️ Logitech G213 Prodigy
+            </p>
+
+            <p>
+                Et prisvenligt tastatur til både
+                gaming og hverdagsbrug.
+            </p>
+
+            <a href="tastatur2.html" class="knap">
+                📖 Se anbefaling
+            </a>
+
         </div>
 
+
+        <!-- GAMING + HVERDAG -->
+
         <div>
+
             <h3>💻 Bedst til gaming + hverdag</h3>
-            <p>🖥️ LG UltraGear 27GR75Q-B</p>
-            <p>27" QHD med 165 Hz – god til både gaming, skole og arbejde.</p>
-            <a href="skaerm2.html" class="knap">Se anbefaling</a>
+
+            <p>
+                🖥️ LG UltraGear 27GR75Q-B
+            </p>
+
+            <p>
+                27" QHD med 165 Hz – god til både
+                gaming, skole og arbejde.
+            </p>
+
+            <a href="skaerm2.html" class="knap">
+                📖 Se anbefaling
+            </a>
+
         </div>
 
     </div>
 
 </section>
 
-       <section class="populaere">
+
+<!-- POPULÆRE -->
+
+<section class="populaere">
 
     <h2>⭐ Populære lige nu</h2>
 
     <div class="populaere-produkter">
 
-       <div class="produkt">
-    <h3>🖱️ Logitech G309 LIGHTSPEED</h3>
 
-    <p>
-        En trådløs gaming-mus med lav latenstid,
-        præcis HERO 25K-sensor og et let design.
-    </p>
-
-    <p>
-        <strong>God til:</strong>
-        CS2, Valorant og andre FPS-spil
-    </p>
-
-    <p>
-        <strong>Vores vurdering:</strong> ⭐⭐⭐⭐⭐
-    </p>
-
-    <a href="https://geekd.dk/products/logitech-g309-lightspeed-gaming-mouse?pa-partnerid=57291&pacid=6a819c520dc6f0.35592238&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
-       class="koeb-knap"
-       target="_blank"
-       rel="sponsored noopener">
-        🛒 Køb produkt
-    </a>
-
-    <a href="mus1.html" class="knap">
-        📖 Læs anmeldelse
-    </a>
-</div>
-
-<div class="produkt">
-
-    <h3>🎧 HyperX Cloud Stinger 2</h3>
-
-    <p>
-        Gaming-headset med fokus på komfort,
-        gaming-lyd og kommunikation.
-    </p>
-
-    <p><strong>Vores vurdering:</strong> ⭐⭐⭐⭐☆</p>
-
-  <a href="https://geekd.dk/products/hyperx-cloud-stinger-2-tradlost-gaming-headset?pa-partnerid=57291&pacid=6a819d29e183b4.64477178&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
-   class="koeb-knap"
-   target="_blank"
-   rel="sponsored noopener">
-    🛒 Køb produkt
-</a>
-
-<a href="headset1.html" class="knap">
-    📖 Læs anmeldelse
-</a>
-
-</div>
-
-<div class="produkt">
-
-    <h3>🖥️ AOC 24G4XE</h3>
-
-    <p>
-        Gaming-skærm med 180 Hz og IPS-panel,
-        velegnet til hurtige spil.
-    </p>
-
-    <p><strong>Vores vurdering:</strong> ⭐⭐⭐⭐☆</p>
-
-    <a href="https://geekd.dk/products/aoc-24g4xe-23-8-1920x1080-16-9-300-cd-m-1-ms-hdmi-displayport-headphone-out?pa-partnerid=57291&pacid=6a819d873635a4.67123006&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
-   class="koeb-knap"
-   target="_blank"
-   rel="sponsored noopener">
-    🛒 Køb produkt
-</a>
-
-<a href="skaerm1.html" class="knap">
-    📖 Læs anmeldelse
-</a>
-
-</div>
+        <!-- MUS -->
 
         <div class="produkt">
-            <h3>⌨️ Gamiac TKL90G</h3>
+
+            <h3>
+                🖱️ Logitech G309 LIGHTSPEED
+            </h3>
+
+            <p>
+                En trådløs gaming-mus med lav latenstid,
+                præcis HERO 25K-sensor og et let design.
+            </p>
+
+            <p>
+                <strong>God til:</strong>
+                CS2, Valorant og andre FPS-spil
+            </p>
+
+            <p>
+                <strong>Vores vurdering:</strong>
+                ⭐⭐⭐⭐⭐
+            </p>
+
+            <a href="https://geekd.dk/products/logitech-g309-lightspeed-gaming-mouse?pa-partnerid=57291&pacid=6a819c520dc6f0.35592238&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
+               class="koeb-knap"
+               target="_blank"
+               rel="sponsored noopener">
+
+                🛒 Køb produkt
+
+            </a>
+
+            <a href="mus1.html" class="knap">
+
+                📖 Læs anmeldelse
+
+            </a>
+
+        </div>
+
+
+        <!-- HEADSET -->
+
+        <div class="produkt">
+
+            <h3>
+                🎧 HyperX Cloud Stinger 2
+            </h3>
+
+            <p>
+                Gaming-headset med fokus på komfort,
+                gaming-lyd og kommunikation.
+            </p>
+
+            <p>
+                <strong>Vores vurdering:</strong>
+                ⭐⭐⭐⭐☆
+            </p>
+
+            <a href="https://geekd.dk/products/hyperx-cloud-stinger-2-tradlost-gaming-headset?pa-partnerid=57291&pacid=6a819d29e183b4.64477178&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
+               class="koeb-knap"
+               target="_blank"
+               rel="sponsored noopener">
+
+                🛒 Køb produkt
+
+            </a>
+
+            <a href="headset1.html" class="knap">
+
+                📖 Læs anmeldelse
+
+            </a>
+
+        </div>
+
+
+        <!-- SKÆRM -->
+
+        <div class="produkt">
+
+            <h3>
+                🖥️ AOC 24G4XE
+            </h3>
+
+            <p>
+                Gaming-skærm med 180 Hz og IPS-panel,
+                velegnet til hurtige spil.
+            </p>
+
+            <p>
+                <strong>Vores vurdering:</strong>
+                ⭐⭐⭐⭐☆
+            </p>
+
+            <a href="https://geekd.dk/products/aoc-24g4xe-23-8-1920x1080-16-9-300-cd-m-1-ms-hdmi-displayport-headphone-out?pa-partnerid=57291&pacid=6a819d873635a4.67123006&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
+               class="koeb-knap"
+               target="_blank"
+               rel="sponsored noopener">
+
+                🛒 Køb produkt
+
+            </a>
+
+            <a href="skaerm1.html" class="knap">
+
+                📖 Læs anmeldelse
+
+            </a>
+
+        </div>
+
+
+        <!-- TASTATUR -->
+
+        <div class="produkt">
+
+            <h3>
+                ⌨️ Gamiac TKL90G
+            </h3>
 
             <p>
                 Kompakt mekanisk gaming-tastatur
                 med hot-swap og RGB.
             </p>
 
-            <p><strong>Vores vurdering:</strong> ⭐⭐⭐⭐☆</p><a href="DIT-AFFILIATE-LINK-TIL-
+            <p>
+                <strong>Vores vurdering:</strong>
+                ⭐⭐⭐⭐☆
+            </p>
 
+            <a href="https://geekd.dk/products/gamiac-tkl90g-grey-black-tkl-kailh-red?pa-partnerid=57291&pacid=6a819e756f4f80.04989522&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
+               class="koeb-knap"
+               target="_blank"
+               rel="sponsored noopener">
 
-    <a href="https://geekd.dk/products/gamiac-tkl90g-grey-black-tkl-kailh-red?pa-partnerid=57291&pacid=6a819e756f4f80.04989522&utm_source=partnerads&utm_medium=affiliate&utm_content=57291"
-       class="koeb-knap"
-       target="_blank"
-       rel="sponsored noopener">
-        🛒 Køb produkt
-    </a>
+                🛒 Køb produkt
 
-    <a href="tastatur1.html" class="knap">
-        📖 Læs anmeldelse
-    </a>
-</div>
+            </a>
 
-</section>
+            <a href="tastatur1.html" class="knap">
 
-        <h2>Hvorfor GamingGuide?</h2>
+                📖 Læs anmeldelse
 
-        <p>
-            Vi hjælper gamere med at finde godt gaming-udstyr
-            uden at bruge unødvendigt mange penge.
-        </p>
-
-        <div class="fordele">
-
-            <div>
-                <h3>⭐ Anbefalinger</h3>
-                <p>Vi sammenligner forskellige produkter.</p>
-            </div>
-
-            <div>
-                <h3>💰 Fokus på pris</h3>
-                <p>Vi hjælper dig med at finde udstyr i forskellige prisklasser.</p>
-            </div>
-
-            <div>
-                <h3>🎮 Til gamere</h3>
-                <p>Guides lavet til både nye og erfarne gamere.</p>
-            </div>
+            </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
+
+
+<!-- HVORFOR GAMINGGUIDE -->
+
+<section class="om-os">
+
+    <h2>Hvorfor GamingGuide?</h2>
+
+    <p>
+        Vi hjælper gamere med at finde godt gaming-udstyr
+        uden at bruge unødvendigt mange penge.
+    </p>
+
+
+    <div class="fordele">
+
+
+        <div>
+
+            <h3>⭐ Anbefalinger</h3>
+
+            <p>
+                Vi sammenligner forskellige produkter
+                og fremhæver gode valg.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>💰 Fokus på pris</h3>
+
+            <p>
+                Vi hjælper dig med at finde udstyr
+                i forskellige prisklasser.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>🎮 Til gamere</h3>
+
+            <p>
+                Guides lavet til både nye
+                og erfarne gamere.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AFFILIATE OPLYSNING -->
+
+<section class="affiliate-info">
+
+    <h2>ℹ️ Affiliate-oplysning</h2>
+
+    <p>
+        Nogle af links på GamingGuide er affiliate-links.
+        Det betyder, at vi kan modtage en mindre provision,
+        hvis du køber et produkt via et af vores links.
+        Det koster ikke ekstra for dig.
+    </p>
+
+</section>
+
+
+<!-- OPDATERET -->
 
 <p class="opdateret">
+
     🕒 Senest opdateret: August 2026
+
 </p>
+
+
+<!-- SØGEFUNKTION -->
 
 <script>
 
@@ -269,44 +481,147 @@ function soeg() {
     let tekst = document
         .getElementById("soegFelt")
         .value
-        .toLowerCase();
+        .toLowerCase()
+        .trim();
 
     let resultat = document.getElementById("soegResultat");
 
-    if (tekst.includes("mus") || tekst.includes("fps")) {
+
+    if (tekst === "") {
 
         resultat.innerHTML =
-            '<p>🖱️ <strong>Logitech G309</strong> – God til FPS-spil</p>' +
-            '<a href="mus1.html" class="knap">Se mus</a>';
+            '<p>🔎 Skriv noget i søgefeltet, fx "FPS-mus", "mekanisk tastatur" eller "180 Hz skærm".</p>';
 
-    } else if (tekst.includes("tastatur")) {
+    }
 
-        resultat.innerHTML =
-            '<p>⌨️ <strong>Logitech G213</strong> – God til gaming og hverdagsbrug</p>' +
-            '<a href="tastatur2.html" class="knap">Se tastatur</a>';
 
-    } else if (tekst.includes("headset")) {
-
-        resultat.innerHTML =
-            '<p>🎧 <strong>HyperX Cloud Stinger 2</strong> – Godt gaming-headset</p>' +
-            '<a href="headset1.html" class="knap">Se headset</a>';
-
-    } else if (tekst.includes("skærm") || tekst.includes("skaerm")) {
+    else if (
+        tekst.includes("mus") ||
+        tekst.includes("fps") ||
+        tekst.includes("trådløs") ||
+        tekst.includes("wireless")
+    ) {
 
         resultat.innerHTML =
-            '<p>🖥️ <strong>LG UltraGear 27GR75Q-B</strong> – God til gaming og hverdagsbrug</p>' +
-            '<a href="skaerm2.html" class="knap">Se skærm</a>';
+            '<p>🖱️ <strong>Logitech G309 LIGHTSPEED</strong> – God til FPS-spil og hurtig gaming.</p>' +
+            '<a href="mus1.html" class="knap">📖 Se gaming-mus</a>';
 
-    } else {
+    }
+
+
+    else if (
+        tekst.includes("tastatur") ||
+        tekst.includes("mekanisk") ||
+        tekst.includes("keyboard") ||
+        tekst.includes("rgb")
+    ) {
 
         resultat.innerHTML =
-            '<p>😕 Vi kunne ikke finde noget. Prøv fx "mus", "FPS", "tastatur", "headset" eller "skærm".</p>';
+            '<p>⌨️ <strong>Gaming-tastaturer</strong> – Find mekaniske tastaturer til gaming.</p>' +
+            '<a href="tastatur.html" class="knap">⌨️ Se tastaturer</a>';
+
+    }
+
+
+    else if (
+        tekst.includes("headset") ||
+        tekst.includes("lyd") ||
+        tekst.includes("mikrofon")
+    ) {
+
+        resultat.innerHTML =
+            '<p>🎧 <strong>HyperX Cloud Stinger 2</strong> – Et gaming-headset med fokus på komfort og kommunikation.</p>' +
+            '<a href="headsets.html" class="knap">🎧 Se headsets</a>';
+
+    }
+
+
+    else if (
+        tekst.includes("skærm") ||
+        tekst.includes("skaerm") ||
+        tekst.includes("180hz") ||
+        tekst.includes("144hz") ||
+        tekst.includes("165hz") ||
+        tekst.includes("monitor")
+    ) {
+
+        resultat.innerHTML =
+            '<p>🖥️ <strong>Gaming-skærme</strong> – Find skærme med høj Hz og hurtig responstid.</p>' +
+            '<a href="skaerme.html" class="knap">🖥️ Se skærme</a>';
+
+    }
+
+
+    else if (
+        tekst.includes("gaming pc") ||
+        tekst.includes("gaming-pc") ||
+        tekst.includes("computer") ||
+        tekst.includes("pc")
+    ) {
+
+        resultat.innerHTML =
+            '<p>🖥️ <strong>Gaming-PC</strong> – Find en Gaming-PC til dit budget og dine spil.</p>' +
+            '<a href="gaming-pc.html" class="knap">🖥️ Se Gaming-PC</a>';
+
+    }
+
+
+    else {
+
+        resultat.innerHTML =
+            '<p>😕 Vi kunne ikke finde noget.</p>' +
+            '<p>Prøv fx <strong>FPS</strong>, <strong>mekanisk tastatur</strong>, <strong>headset</strong>, <strong>180 Hz skærm</strong> eller <strong>Gaming-PC</strong>.</p>';
 
     }
 
 }
 
 </script>
+
+<footer>
+
+    <div class="footer-indhold">
+
+        <div>
+            <h3>🎮 GamingGuide</h3>
+            <p>
+                Hjælp til at finde det rigtige gaming-udstyr
+                til dit budget og din spillestil.
+            </p>
+        </div>
+
+        <div>
+            <h3>📚 Kategorier</h3>
+
+            <a href="gaming-pc.html">Gaming-PC</a>
+            <a href="mus.html">Gaming-mus</a>
+            <a href="tastatur.html">Tastaturer</a>
+            <a href="headsets.html">Headsets</a>
+            <a href="skaerme.html">Skærme</a>
+        </div>
+
+        <div>
+            <h3>🔗 Links</h3>
+
+            <a href="index.html">Forside</a>
+            <a href="guide.html">Købsguide</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bund">
+
+        <p>
+            © 2026 GamingGuide
+        </p>
+
+        <p>
+            Nogle links er affiliate-links.
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
 
